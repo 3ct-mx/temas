@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="resultado"></p>
+
+    <script>
+        let numeros = [25, 17];
+
+        promedio(numeros);// Invoco la funcion
+
+
+        function promedio(arreglo){
+            let suma = 0;// Almacenar total
+            for (let indice = 0 ; indice < arreglo.length;indice++){
+                suma += arreglo[indice]; // Acumular
+            }
+            var salida = suma / arreglo.length;
+            var parrafo = document.getElementById("resultado");
+            parrafo.innerText="Temperatura promedio "+salida;
+        }
+
+    </script>
+
+</body>
+</html>
